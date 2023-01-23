@@ -6,7 +6,8 @@ layout: home
 title: AZTEC Model Documentation
 ---
 
-The ICCT’s AZTEC model...
+The Analyzer of Zero-emission Transportation Energy and Costs (AZTEC) model is an upgraded version of
+the ICCT's first fleet-level total cost of ownership (TCO) tool, the Toolkit for Urban Bus Operations (TURBO).
 
 ## Versions
 

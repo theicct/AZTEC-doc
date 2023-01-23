@@ -25,6 +25,17 @@
      - Make a copy of the latest Markdown version of the documentation, using the same naming convention (for example, if the latest documentation is `v1.5.md`, create a copy named `v1.6.md`, matching the version of the AZTEC model)
      - Add your changes to the new Markdown file using your favorite Markdown editor
      - If you added images in step 4, add them to the file by inserting the following in the document: `![](/AZTEC-doc/assets/[filename])` where `[filename]` is the name of the image
+     - Add the following to the top and bottom of your Markdown file, respectively: 
+       ```
+       ---
+       layout: page
+       title: 'AZTEC vX.Y Documentation'
+       permalink: /versions/vX.Y/
+       ---
+       ```
+       ```
+       <button name='download' onclick="location.href='../AZTEC vX.Y Model Documentation.pdf'">Download as PDF</button>
+       ```
    -  5b. Copy automatically
       - Edit the file path in _shared_version.sh_ to point to the Word version
       - If you added images in step 4, update the `IMG_MAP` in _doc_to_page.py_

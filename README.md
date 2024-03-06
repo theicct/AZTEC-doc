@@ -16,14 +16,11 @@
 
 ## Updating the documentation
 
-1. Write your updates in the Word version
+1. Write your updates in the AZTEC user guide
 2. Get review, as necessary
-3. Save as a .pdf file to the _versions_ folder with the name _AZTEC vX.Y Model Documentation.pdf_ where _X_ and _Y_ reference the model version, e.g. _AZTEC v1.6 Model Documentation.pdf_ (make sure you hide all markup before exporting)
-4. If you added images to the Word document, add them to the _assets_ folder
-5. Copy your changes to a Markdown version of the documentation either manually or automatically
-   - 5a. Copy manually
-     - Make a copy of the latest Markdown version of the documentation, using the same naming convention (for example, if the latest documentation is `v1.5.md`, create a copy named `v1.6.md`, matching the version of the AZTEC model)
-     - Add your changes to the new Markdown file using your favorite Markdown editor
+3. If you added images to the AZTEC user guide document, add them to the _assets_ folder in this AZTEC-doc repo
+4. Copy the latest user guide Markdown file to the _versions_ folder as well
+     - Use the same naming convention (for example, if the latest version is `v1.6`, create a copy of the `README.md` named `v1.6.md`)
      - If you added images in step 4, add them to the file by inserting the following in the document: `![](/AZTEC-doc/assets/[filename])` where `[filename]` is the name of the image
      - Add the following to the top and bottom of your Markdown file, respectively: 
        ```
@@ -36,15 +33,14 @@
        ```
        <button name='download' onclick="location.href='../AZTEC vX.Y Model Documentation.pdf'">Download as PDF</button>
        ```
-   -  5b. Copy automatically
-      - Edit the file path in _shared_version.sh_ to point to the Word version
-      - If you added images in step 4, update the `IMG_MAP` in _doc_to_page.py_
-      - Run the _copy_doc.sh_ bash script
-6. (Optional) Test your changes locally
+     - Remove unnecessary sections ('Installation', 'Sensitivity step-by-step instructions')
+     - Add authors in new 'Acknowledgments' subsection of 'Introduction'
+5. Test your changes locally
    - First, temporarily remove all references to the `AZTEC-doc/` directory (it becomes the baseurl once served by GitHub) from the Markdown documentation file and the _config.yml file
    - run `jekyll serve`
-   - Make sure you add back in the references to `AZTEC-doc/`
-7. Add and commit the new documentation files
+6. Save the webpage to a .pdf file and move to the _versions_ folder with the name _AZTEC vX.Y Model Documentation.pdf_ where _X_ and _Y_ reference the model version, e.g. _AZTEC v1.6 Model Documentation.pdf_
+   - Afterwards, make sure you add back in the references to `AZTEC-doc/` for any images
+8. Add and commit the new documentation files
    - `git add versions/vX.Y.md versions/AZTEC vX.Y Model Documentation.pdf`
    - `git commit -m "[Useful description of changes]"`
 8. Push your changes, wait a minute, then check to make sure the [online version](https://theicct.github.io/AZTEC-doc) updated correctly

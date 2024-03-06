@@ -9,6 +9,9 @@ title: AZTEC Model Documentation
 The Analyzer of Zero-emission Transportation Energy and Costs (AZTEC) model is an upgraded version of
 the ICCT's first fleet-level total cost of ownership (TCO) tool, the Toolkit for Urban Bus Operations (TURBO).
 
+TURBO was first developed in 2020 by Caleb Braun, Claire Buysse, and Josh Miller. 
+AZTEC was first developed in 2022 by Gabe Hillman Alvarez, Erik Pronk, Josh Miller, and Arijit Sen.
+
 ## Versions
 
 AZTEC is under continuing development. Documentation of all versions since v1.0 can be found here.
